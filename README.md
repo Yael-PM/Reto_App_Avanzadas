@@ -38,19 +38,17 @@ Solo necesitas **dos archivos** de datos. Colócalos en la **raíz del proyecto*
 
 > El archivo `data_train_reparado.csv` es **generado automáticamente** por el notebook durante el preprocesamiento. No es necesario proporcionarlo.
 
-### Rutas absolutas en el notebook
+### Rutas en el notebook
 
 Las celdas de carga de datos usan rutas absolutas. Si clonas el repositorio en una ubicación diferente, actualiza las siguientes líneas en `Clasificador.ipynb`:
 
 ```python
 # Celda de preprocesamiento
-input_path  = '/Users/ignacio/Documents/Proyecto Apps/Reto_App_Avanzadas/data_train.xlsx'
-output_path = '/Users/ignacio/Documents/Proyecto Apps/Reto_App_Avanzadas/data_train_reparado.csv'
+input_path  = '/Users/tu_user/Documents/Reto_App_Avanzadas/data_train.xlsx'
+output_path = '/Users/tu_user/Documents/Reto_App_Avanzadas/data_train_reparado.csv'
 
 # Celda de evaluación
-df_test = pd.read_csv('/Users/ignacio/Documents/Proyecto Apps/Reto_App_Avanzadas/data_test.csv', ...)
-```
-
+df_test = pd.read_csv('/Users/tu_user/Documents/Reto_App_Avanzadas/data_test.csv', ...)
 Reemplaza la ruta base con la ruta absoluta a tu copia del repositorio.
 
 ---
@@ -76,6 +74,7 @@ Reto_App_Avanzadas/
 ├── data_train.xlsx             # ← debes proveer este archivo
 ├── data_test.csv               # ← debes proveer este archivo
 ├── data_train_reparado.csv     # generado por el notebook
+├── reporte_analisis_tweets.html # generado por el notebook
 ├── requirements.txt
 └── tests/
     └── test_preprocesamiento.ipynb

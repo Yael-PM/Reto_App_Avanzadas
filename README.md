@@ -13,7 +13,19 @@ Clasificador de tweets para la detección de trastornos de la alimentación (ano
 
 ## Instalación de dependencias
 
-Desde la raíz del proyecto, ejecuta:
+Desde la raíz del proyecto, crea y activa un entorno virtual:
+
+```bash
+python -m venv .venv
+
+# macOS / Linux
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+```
+
+Luego instala las dependencias:
 
 ```bash
 pip install -r requirements.txt
